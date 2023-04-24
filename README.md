@@ -13,13 +13,13 @@
 - [**Importando um projeto para dentro do eclipse**](#Importando-um-projeto-para-dentro-do-eclipse)
 
 ## Criação de uma branch e comitando alterações
-- [**Hierarquia e padrão de nomenclatura das branchs**](#Padrão-de-nomenclatura-das-branchs)
+- [**Hierarquia e padrão de nomenclatura das branchs**](#Hierarquia-e-padrão-de-nomenclatura-das-branchs)
 
 - [**Criação de uma branch a partir do Jira**](#Criação-de-uma-branch-a-partir-do-Jira)
 
-- [**Fazendo um commit vinculado ao Jira e padrão de nomenclatura**](#Fazendo-um-commit-vinculado-ao-Jira)
+- [**Fazendo um commit vinculado ao Jira e padrão de nomenclatura**](#Fazendo-um-commit-vinculado-ao-Jira-e-padrão-de-nomenclatura)
 
-- [**Fazendo rebase e merge da branch pai**](#Padrão-de-nomenclatura-dos-commits)
+- [**Fazendo rebase e merge da branch pai**](#Fazendo-rebase-e-merge-da-branch-pai)
 
 <br>
 
@@ -171,12 +171,14 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
 
   Passos para criar uma branch através de um card:
 
-  *  Selecione o card que deseja e clique em "Criar Branch";
-    ![Jira](06.png)
+  *  Selecione o card que deseja e clique em "Criar Branch";  
+    
+      ![Jira](06.png)
      
   <br>
 
-  * Selecione o Repositório do cliente, a branch 'pai' do projeto e **não esqueça de conferir o nome da branch** que está criando. Não há problemas em modificar o nome, porém é obrigatório que a branch comece com o código do card por exemplo: '`VFLOWS-49`', além de que precisa ter o nome do projeto '`Processo-Reposicao-Estoque`' e uma breve descrição do que se trata a branch '`desenvolvimento-front-end`'.
+  * Selecione o Repositório do cliente, a branch 'pai' do projeto e **não esqueça de conferir o nome da branch** que está criando. Não há problemas em modificar o nome, porém é obrigatório que a branch comece com o código do card por exemplo: '`VFLOWS-49`', além de que precisa ter o nome do projeto '`Processo-Reposicao-Estoque`' e uma breve descrição do que se trata a branch '`desenvolvimento-front-end`'.  
+  
     ![Jira](07.png)
 
     Após ter conferido todas as informações clique no botão 'Create branch'.
@@ -184,6 +186,7 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
   <br>
 
   * Para começar a atuar na branch criada abra a pasta do projeto no Visual Studio Code, vá na aba 'Source Control', faça um fetch e a branch nova irá ficar disponível para ser selecionada. Lembrando que é necessário estar com a conta do GitHub logada no Visual Studio Code.  
+  
     ![vsCode](08.png)
 
 <br>
@@ -255,3 +258,5 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
   Caso a branch pai não tenha sofrido alterações não é necessário o uso do rebase.
 
   Ao final desse processo a branch pai do projeto estará atualizada e pronta para ser enviada para produção caso necessário.
+
+
