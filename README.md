@@ -30,7 +30,7 @@
  <br>
 
 * ### **Configuração da conta no desktop**:  
-  Estar com o usuário do GitHub logado na máquina é necessário para começar a trabalhar com os repositórios dos clientes.  
+   É necessário estar com o usuário do GitHub logado na máquina para começar a trabalhar com os repositórios dos clientes.  
 
   Caso utilize o [Visual Studio Code](https://code.visualstudio.com/) como ferramenta para edição de código (altamente recomendável), é possível fazer o login e sincronizar a conta do GitHub por ele.
 
@@ -149,7 +149,7 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
   
   <br>
 
-  * `PROC` - Informa qual o tipo de projeto, se é uma Widget ou Processo:
+  * `PROC` - Informa qual o tipo de projeto, se é um Processo ou Widget:
     - `PROC`;
     - `WD`.
    
@@ -165,7 +165,7 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
   <br>
 
 * ### **Criação de uma branch a partir do Jira**:  
-  Tendo criado a branch 'pai' do projeto podemos partir para a criação das branchs de desenvolvimento daquele projeto.
+  Tendo criado a branch 'pai' do projeto, podemos partir para a criação das branchs de desenvolvimento daquele projeto.
 
   A ferramenta de gestão utilizada pela VFLOWS é o [Jira](https://www.atlassian.com/br/software/jira). Teremos todas as etapas de desenvolvimento do projeto dentro de cards no Jira. A partir desses cards é possível criar as branchs de desenvolvimento.
 
@@ -220,7 +220,7 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
   Fazendo esse commit direto no Visual Studio Code Ficaria da seguinte forma:  
   ![vsCode](09.png)
 
-  Alguns exemplos de emojis mais utilizados:
+  Alguns exemplos de emojis mais utilizados:  
   ⚡ - Melhora de performance;  
   🐛 - Correção de bug;  
   🚀 - Deploy;  
@@ -236,9 +236,9 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
   Todos esses emojis estão no site [gitmoji.dev](https://gitmoji.dev/),lá existem várias outras opções que podem ser utilizadas juntamente com a descrição de cada um.
 
 * ### **Fazendo rebase e merge da branch pai**:  
-  Tendo finalizado o desenvolvimento do card, testado no servidor e feito o último commit é de **extrema importância a atualização da branch pai do projeto**! Para fazer essa atualização é utilizado o comando `git rebase` e `git merge`.
+  Tendo finalizado o desenvolvimento do card, testado no servidor e feito o último commit é de **extrema importância a atualização da branch pai do projeto**! Para fazer essa atualização são utilizados os comandos `git rebase` e `git merge`.
 
-  Caso a branch pai tenha sido modificada e ficado a frente da versão que foi utilizada como base é necessário fazer o rebase da branch de desenvolvimento para pegar a versão mais atual da branch pai.
+  Caso a branch pai tenha sido modificada e ficado à frente da versão que foi utilizada como base é necessário fazer o rebase da branch de desenvolvimento para pegar a versão mais atual da branch pai.
 
   <br>
 
@@ -249,7 +249,7 @@ Após esses passos o projeto estará devidamente importado no Eclipse e pronto p
 
   <br>
 
-  Feito o rebase agora é necessário enviar as alterações feitas na branch de desenvolvimento para a branch pai. Para isso é necessário mudar para a branch pai **(sempre confirme que está na branch pai correta)** e então utilize o merge passando o nome da branch de desenvolvimento:
+  Feito o rebase agora é necessário enviar as alterações feitas na branch de desenvolvimento para a branch pai. Para isso é necessário mudar para a branch pai **(sempre confirme que está na branch pai correta)** e então utilizar o merge passando o nome da branch de desenvolvimento:
 
   ```bash
   git merge 'VFLOWS-49-Processo-Reposicao-Estoque-desenvolvimento-front-end'
